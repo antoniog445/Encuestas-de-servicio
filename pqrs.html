@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario PQRS - Clínica Dr. Hernán Pájaro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<section>
+  <h1>PQRS Clinica Dr Hernan Pajaro</h1>
+  <div class="container-form">
+    <div class="container-titles">
+        <p class="subtitle">Tu opinión es muy <br> importante para nosotros!.</p>
+        <p style="font-size: 18px; color:#3388FF;" >Radica tus solicitudes de PQRSF</p>
+    </div>
+    <form id="pqrsForm">
+        <div class="sub-seccion">
+            <fieldset>
+                <legend style="padding: 10px;">Información General de la Solicitud</legend>
+                <div class="select-box">
+                    <label for="select-box1" class="label select-box1"><span class="label-desc">Tipo de solicitud</span> </label>
+                    <select id="select-box1" class="select">
+                        <option value="Choice 1">Petición</option>
+                        <option value="Choice 2">Queja</option>
+                        <option value="Choice 3">Reclamo</option>
+                        <option value="Choice 4">Sugerencia</option>
+                        <option value="Choice 5">Felicitación</option>
+                    </select>
+              </div>
+              <div class="select-box">
+                    <label for="select-box2" class="label select-box2"><span class="label-desc">Sucursal en la que fue atendido</span> </label>
+                    <select id="select-box2" class="select">
+                        <option value="Choice 1">Barranquilla</option>
+                        <option value="Choice 2">Bogotá</option>
+                    </select>  
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="sub-seccion">
+            <fieldset class="fieldset-paciente">
+                <legend style="padding: 10px;">Información del Paciente:</legend>
+                <div>
+                    <Label class="label-paciente">Nombre del paciente</Label>
+                    <input type="text" placeholder="John Doe" />
+                </div>
+                <div>
+                    <label class="label-paciente">Numero de identificación</label>
+                    <input type="number" placeholder="12345" />
+                </div>
+                <div>
+                    <label class="label-paciente">Correo de contacto</label>
+                    <input type="email" placeholder="johndoe@mail.com"/>
+                </div>
+                <div>
+                    <label class="label-paciente">Numero de contacto</label>
+                    <input type="number" placeholder="3001231214"/>
+                </div>
+            </fieldset>
+        </div>
+        <div class="sub-seccion">
+            <fieldset class="fieldset-descripcion">
+                <legend style="padding: 10px;">Descripción de la solicitud:</legend>
+                <textarea class="text-area" placeholder="Describa su caso con detalles"></textarea>
+                <input type="file" />
+            </fieldset>
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+</body>
+<script src="hpscript.js"></script>
+</html>

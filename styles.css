@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  section{
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  fieldset{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+ } 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .buttons a {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+
+  .container-form{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 55%;
+    width: 100%;
+  }
+
+  .container-titles{
+    background: #ebe5e5;
+    text-align: center;
+    }
+
+  .subtitle{
+    color: #1c4587;
+    font-size: 22px;
+  }
+
+  .sub-seccion{
+    padding: 20px
+  }
+  
+  .select-box {
+    cursor: pointer;
+    position : relative;
+    max-width:  40em;
+    margin: 1em auto;
+    width: 100%;
+  }
+  
+  .select,.label {
+    color: #414141;
+    display: block;
+    font: 400 17px/2em 'Source Sans Pro', sans-serif;
+  }
+  
+  .select {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    height: 40px;
+    opacity: 0;
+    background: none transparent;
+    border: 0 none;
+  }
+  .select-box1, .select-box2 {
+    background: #ececec;
+  }
+  
+  .label {
+    display: flex;
+    text-align: start;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .open .label::after {
+     content: "▲";
+  }
+  .label::after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 15px;
+    border-left: 5px solid #fff;
+  }
+
+  .fieldset-paciente{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+  }
+
+  .fieldset-paciente label{
+    margin: 0;
+  }
+
+  .fieldset-paciente input, textarea{
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    background-color: #ECECEC;
+    border: none;
+    border-bottom: 1px solid rgb(33, 33, 33);
+    padding: 5px;
+}
+
+.fieldset-paciente input:focus {
+    outline: none; /* quitamos el estilo del navegador */
+    border-bottom: 2px solid #3388FF; /* estilo personalizado de foco */
+    background-color: #F5F5F5; /* o un leve cambio visual */
+  }
+
+  #pqrs {
+    background: #2196F3;
+    color: #fff;
+  }
+  #pqrs:hover {
+    background: #1976D2;
+  }
+  
+  #sat {
+    background: #4CAF50;
+    color: #fff;
+  }
+  #sat:hover {
+    background: #388E3C;
+  }
+  
+  /* En pantallas anchas, ponemos los botones en fila */
+  @media (min-width: 600px) {
+    .buttons {
+      flex-direction: row;
+    }
+    .buttons a {
+      flex: 1;
+    }
+  }
+
+  
+  /* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container-form {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
+    .select-box {
+      margin: 0.5em auto;
+    }
+  
+    .label, .select{
+      font-size: 13px;
+      line-height: 1.4em;
+    }
+
+    .sub-seccion{
+        padding: 0px;
+    }
+
+  }
