@@ -155,6 +155,26 @@
     background-color: #F5F5F5; /* o un leve cambio visual */
   }
 
+  .file-upload-area {
+    border: 2px dashed #888;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    font-family: Arial, sans-serif;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .file-upload-area:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .file-upload-area p {
+    margin: 0;
+    font-size: 14px;
+  }
+
   #pqrs {
     background: #2196F3;
     color: #fff;

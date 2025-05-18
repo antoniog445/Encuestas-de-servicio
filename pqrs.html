@@ -64,8 +64,11 @@
             <fieldset class="fieldset-descripcion">
                 <legend style="padding: 10px;">Descripción de la solicitud:</legend>
                 <textarea class="text-area" placeholder="Describa su caso con detalles"></textarea>
-                <input type="file" />
-            </fieldset>
+                <div class="file-upload-area" id="drop-area">
+                    <p>Seleccione o arrastre aquí sus archivos</p>
+                    <input type="file" id="fileInput" class="file-input" multiple>
+                  </div>
+                </fieldset>
         </div>
         
         <button type="submit">Enviar</button>
